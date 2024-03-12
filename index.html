@@ -3,161 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CPS</title>
+    <title>CPS menu</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__contrainer">
-          <button class="header-button burger"></button>
-          <div class="header__line--logo--indent"></div>
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <button class="header-button close close_indent"></button>
           <img
-            class="logo"
+            class="logo logo_indent"
             src="./images/Group.svg"
             alt="логотип компании CPS"
           />
-          <nav class="header__navigate">
-            <div class="header__navigate-visibility">
-              <a href="#" class="link call" target="_blank"></a>
-              <a href="#" class="link chat" target="_blank"></a>
-              <a href="#" class="link profile" target="_blank"></a>
-            </div>
-            <div class="header__line header__line--navigate--indent"></div>
-            <a href="#" class="link repair" target="_blank"></a>
-            <a href="#" class="link checkstatus" target="_blank"></a>
-          </nav>
+          <button class="header-button find find_indent"></button>
         </div>
-      </header>
-      <main class="contant">
-        <section class="description">
-          <div class="description__title-container">
-            <h1 class="description__title">Услуги и сервисы</h1>
-            <div class="description__container-service">
-              <span class="description__service-text">Оставить заявку</span
-              ><a
-                href="#"
-                class="description__service repair"
-                target="_blank"
-              ></a>
-              <span class="description__service-text">Статус ремонта</span
-              ><a
-                href="#"
-                class="description__service checkstatus"
-                target="_blank"
-              ></a>
-            </div>
-          </div>
-          <ul class="description__list">
-            <li class="description__item">Ремонтируемые бренды</li>
-            <li class="description__item">Ремонтируемые устройства</li>
-            <li class="description__item">Цены на услуги</li>
-            <li class="description__item">Адреса сервисных центров</li>
-            <li class="description__item">Специальные цены</li>
-            <li class="description__item">Отзывы</li>
-          </ul>
-          <div class="description__info">
-            <div>
-              <p class="description__text">
-                Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя. <br />
-                <br />
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера, что подтверждает большое количество постоянных
-                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                и, в свою очередь, советуют нас родным и близким.
-              </p>
-              <a class="description__link" href="#">Читать далее</a>
-            </div>
-
-            <img
-              class="description__img"
-              src="./images/CPS.jpg"
-              alt="фото логотипа и часы работы компании"
-            />
-          </div>
-        </section>
-        <aside class="sidebar">
-          <div class="sidebar__header">
-            <button class="header-button close close_indent"></button>
-            <img
-              class="logo logo_indent"
-              src="./images/Group.svg"
-              alt="логотип компании CPS"
-            />
-            <button class="header-button find find_indent"></button>
-          </div>
-          <ul class="sidebar__services-list">
-            <li class="sidebar__servis-item">
-              <a class="sidebar__servis-link" href="#" target="_blank"
-                >Ремонт техники</a
-              >
+        <ul class="sidebar__services-list">
+          <li class="sidebar__servis-item">
+            <a class="sidebar__servis-link" href="#" target="_blank"
+              >Ремонт техники</a
+            >
+          </li>
+          <li class="sidebar__servis-item">
+            <a class="sidebar__servis-link" href="#" target="_blank"
+              >Услуги и сервисы</a
+            >
+          </li>
+          <li class="sidebar__servis-item">
+            <a class="sidebar__servis-link" href="#" target="_blank"
+              >Корпоративным клиентам</a
+            >
+          </li>
+          <li class="sidebar__servis-item">
+            <a class="sidebar__servis-link" href="#" target="_blank"
+              >Продавцам техники</a
+            >
+          </li>
+          <li class="sidebar__servis-item">
+            <a class="sidebar__servis-link" href="#" target="_blank"
+              >Партнерам</a
+            >
+          </li>
+          <li class="sidebar__servis-item">
+            <a class="sidebar__servis-link" href="#" target="_blank"
+              >Производителям</a
+            >
+          </li>
+          <li class="sidebar__servis-item">
+            <a class="sidebar__servis-link" href="#" target="_blank"
+              >Наши сервисные центры</a
+            >
+          </li>
+          <li class="sidebar__servis-item">
+            <a class="sidebar__servis-link" href="#" target="_blank"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+        <div class="sidebar__communication">
+          <ul class="sidebar__communication-list">
+            <li class="sidebar__communication-item">
+              <a class="link call" href="#" target="_blank"></a>
             </li>
-            <li class="sidebar__servis-item">
-              <a class="sidebar__servis-link" href="#" target="_blank"
-                >Услуги и сервисы</a
-              >
+            <li class="sidebar__communication-item">
+              <a class="link chat" href="#" target="_blank"></a>
             </li>
-            <li class="sidebar__servis-item">
-              <a class="sidebar__servis-link" href="#" target="_blank"
-                >Корпоративным клиентам</a
-              >
-            </li>
-            <li class="sidebar__servis-item">
-              <a class="sidebar__servis-link" href="#" target="_blank"
-                >Продавцам техники</a
-              >
-            </li>
-            <li class="sidebar__servis-item">
-              <a class="sidebar__servis-link" href="#" target="_blank"
-                >Партнерам</a
-              >
-            </li>
-            <li class="sidebar__servis-item">
-              <a class="sidebar__servis-link" href="#" target="_blank"
-                >Производителям</a
-              >
-            </li>
-            <li class="sidebar__servis-item">
-              <a class="sidebar__servis-link" href="#" target="_blank"
-                >Наши сервисные центры</a
-              >
-            </li>
-            <li class="sidebar__servis-item">
-              <a class="sidebar__servis-link" href="#" target="_blank"
-                >Контакты</a
-              >
+            <li class="sidebar__communication-item">
+              <a class="link profile" href="#" target="_blank"></a>
             </li>
           </ul>
-          <div class="sidebar__communication">
-            <ul class="sidebar__communication-list">
-              <li class="sidebar__communication-item">
-                <a class="link call" href="#" target="_blank"></a>
-              </li>
-              <li class="sidebar__communication-item">
-                <a class="link chat" href="#" target="_blank"></a>
-              </li>
-              <li class="sidebar__communication-item">
-                <a class="link profile" href="#" target="_blank"></a>
-              </li>
-            </ul>
-            <p class="sidebar__email">mail@cps.com</p>
-            <p class="sidebar__phone">8 800 890 8900</p>
-          </div>
-          <ul class="language">
-            <li class="language__item">
-              <a class="language__switch" href="#">RU</a>
-            </li>
-            <li class="language__item">
-              <a class="language__switch" href="#">EN</a>
-            </li>
-            <li class="language__item">
-              <a class="language__switch" href="#">CH</a>
-            </li>
-          </ul>
-        </aside>
-      </main>
+          <p class="sidebar__email">mail@cps.com</p>
+          <p class="sidebar__phone">8 800 890 8900</p>
+        </div>
+        <ul class="language">
+          <li class="language__item">
+            <a class="language__switch" href="#">RU</a>
+          </li>
+          <li class="language__item">
+            <a class="language__switch" href="#">EN</a>
+          </li>
+          <li class="language__item">
+            <a class="language__switch" href="#">CH</a>
+          </li>
+        </ul>
+      </aside>
     </div>
   </body>
 </html>
