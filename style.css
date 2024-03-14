@@ -52,7 +52,7 @@ body {
   margin: 0;
   margin-right: 17px;
   cursor: pointer;
-  transition: opacity 0.3s;
+  transition: opacity 0.7s;
 }
 
 .header-button:hover {
@@ -62,7 +62,7 @@ body {
 .logo {
   margin-right: auto;
   cursor: pointer;
-  transition: opacity 0.3s;
+  transition: opacity 0.7s;
 }
 
 .logo:hover {
@@ -74,7 +74,7 @@ body {
   width: 40px;
   height: 40px;
   margin-right: 16px;
-  transition: opacity 0.3s;
+  transition: opacity 0.7s;
 }
 
 .link:hover {
@@ -156,14 +156,11 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1B1C21;
-  transition: opacity 0.3s;
+  transition: opacity 0.7s, color 0.7s;
 }
 
 .sidebar__servis-link:hover {
   opacity: 0.7;
-}
-
-.sidebar__servis-link:hover {
   color: #7E7E82;
 }
 
@@ -231,7 +228,7 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: #1B1C21;
-  transition: opacity 0.3s;
+  transition: opacity 0.7s;
 }
 
 .language__switch:hover {
