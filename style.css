@@ -4,7 +4,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-/* -------------------------------------------------------------------------------------------------- */
+
 @font-face {
   font-family: "TT Lakes";
   font-style:  normal;
@@ -44,201 +44,11 @@ body {
     position: relative;
   }
 
-.header {
-  min-height: 88px;
-}
+/* ---------------------------------------------------------- */
 
-.header__contrainer {
+.link-btn {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 16px;
-  margin: 0 16px;
-}
-
-.header-button {
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  margin-right: 17px;
-  cursor: pointer;
-  transition: opacity 0.3s;
-}
-
-.header-button:hover {
-  opacity: 0.7;
-}
-
-.header__line {
-  border-right: 2px solid #EAEAEA;
-  height: 32px;
-  width: 2px;
-}
-
-.logo {
-  margin-right: auto;
-  cursor: pointer;
-}
-
-.header__line--logo--indent {
-  display: none;
-}
-
-.header__line--navigate--indent {
-  margin-right: 20px;
-}
-
-.link {
-  display: block;
-  width: 40px;
-  height: 40px;
-  margin-right: 16px;
-  transition: opacity 0.3s;
-}
-
-.link:hover {
-  opacity: 0.7;
-}
-
-.link:last-child {
-  margin-right: 0;
-}
-
-.burger {
-  background-image: url(./images/burger.svg);
-}
-
-.repair {
-  background-image: url(./images/repair.svg);
-}
-
-.checkstatus {
-  background-image: url(./images/checkstatus.svg);
-}
-
-.call {
-  background-image: url(./images/call.svg);
-}
-
-.chat {
-  background-image: url(./images/chat.svg);
-}
-
-.profile {
-  background-image: url(./images/profile.svg);
-}
-
-.close {
-  background-image: url(./images/close.svg);
-}
-
-.find {
-  background-image: url(./images/search.svg);
-}
-
-.header__navigate {
-  display: flex;
-}
-
-.header__navigate-visibility {
-  display: none;
-}
-
-.description__title-container {
-  display: flex;
-  margin: 24px 16px 24px 0;
-}
-
-.description__title {
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: -0.6px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.description__title::before {
-  content: "";
-  display: inline;
-  background-image: url(./images/highlight.png);
-  padding: 0 16px 0 0;
-  background-repeat: no-repeat;
-}
-
-.description__container-service {
-  display: flex;
-  margin-left: auto;
-  align-items: center
-}
-
-.description__service {
-  display: none;
-  width: 40px;
-  height: 40px;
-  margin-right: 33px;
-  transition: opacity 0.3s;
-}
-
-.description__service:hover {
-  opacity: 0.7;
-}
-
-.description__service-text {
-  display: none;
-  padding-right: 8px;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-}
-
-.description__list {
-  list-style: none;
-  padding: 2px;
-  overflow: scroll;
-  display: flex;
-  align-items: center;
-  margin: 0 16px;
-  max-height: 40px;
-}
-
-.description__list::-webkit-scrollbar {
-  display: none;
-}
-
-.description__item {
-  font-size: 16px;
-  line-height: 21px; 
-  letter-spacing: -0.2px;
-  color: #7E7E82;
-  white-space: nowrap;
-  padding: 7px 20px;
-  cursor: pointer;
-  transition: opacity 0.3s;
-}
-
-.description__item:hover {
-  outline: 2px solid #B8FFEC;
-  border-radius: 6px;
-  opacity: 0.7;
-}
-
-.description__info {
-  display: flex;
-  flex-direction: column;
-}
-
-.description__text {
-  margin: 24px 16px 16px;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-}
-
-.description__link {
-  display: flex;
+  max-width: 150px;
   margin-left: 16px;
   text-decoration: none;
   color: #1B1C21;
@@ -249,7 +59,7 @@ body {
   transition: opacity 0.3s;
 }
 
-.description__link::before {
+.link-btn::before {
   content: '';
   background-image: url(./images/icon.svg);
   width: 24px;
@@ -259,122 +69,163 @@ body {
   margin-right: 8px;
 }
 
-.description__link:hover {
+.link-btn-revert::before {
+  background-image: url(./images/expand.svg);
+}
+
+.link-btn:hover {
   opacity: 0.7;
 }
 
-.description__img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 35px;
+.link-btn--indent {
+  margin: 0;
 }
 
+.brand__container {
+  margin: 16px;
+}
+
+.brand__title {
+  margin: 16px 0 32px 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  text-transform: uppercase;
+}
+
+.brand__list {
+  display: none;
+}
+
+.brand__item {
+  flex-basis: 240px;
+  height: 72px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+}
+
+.brand__link {
+  background-repeat: no-repeat;
+  background-position: 16px, 183px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+}
+
+.brand__link:hover {
+  opacity: 0.7;
+}
+
+.hidden{
+  display: none;
+}
+
+.lenovo{
+  background-image: url(./images/Lenovo.png), url(./images/go.svg);
+}
+
+.samsung{
+  background-image: url(./images/Samsung.png), url(./images/go.svg);
+}
+
+.apple{
+  background-image: url(./images/Apple.png), url(./images/go.svg);
+}
+
+.vs{
+  background-image: url(./images/VS.png), url(./images/go.svg);
+}
+
+.bosch{
+  background-image: url(./images/Bosch.png), url(./images/go.svg);
+}
+
+.hp{
+  background-image: url(./images/HP.png), url(./images/go.svg);
+}
+
+.acer{
+  background-image: url(./images/Acer.png), url(./images/go.svg);
+}
+
+.sony{
+  background-image: url(./images/Sony.png), url(./images/go.svg);
+}
+
+.swiper-wrapper{
+  margin-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
+}
+
+/* --------------------------------- */
+
 @media screen and (min-width: 768px) {
-  .header__contrainer {
-    margin: 0 24px;
+  .brand__container {
+  margin: 0 24px 34px;
   }
 
-  .header__line--navigate--indent {
-    margin-left: 20px;
+  .brand__list {
+    margin: 0 auto 24px;
+    gap: 16px 24px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
   }
 
-  .header__line--logo--indent {
-    display: block;
-    margin-right: 20px;
+  .brand__item {
+    flex-basis: 224px;
   }
 
-  .header__navigate {
-    margin-left: auto;
+  .brand__title {
+    margin: 16px 0 40px 0;
   }
 
-  .header__navigate-visibility {
+  .show{
     display: flex;
   }
 
-  .description__title-container {
-    margin-bottom: 32px;
+  .brand__link {
+    background-position: 16px, 167px;
   }
 
-  .description__title::before {
-    padding-right: 24px;
-  }
-  
-  .description__item {
-    line-height: 20px;
-  }
-
-  .description__info {
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 32px auto;
-    align-items: flex-start;
-    min-height: 208px;
-  }
-
-  .description__text {
-    line-height: 20px;
-    margin: 0;
-    max-width: 312px;
-    padding-bottom: 10px;
-  }
-
-  .description__link {
-    margin-left: 0;
-    margin-bottom: 0;
-  }
-
-  .description__img {
-    max-width: 360px;
-    margin-bottom: 0;
+  .swiper{
+    display: none;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .header {
-    min-height: 0;
+  .brand__container {
+    margin: 0 32px 34px;
+  }
+  .brand__title {
+  margin: 16px 0 40px 0;
+  }
+  .brand__item {
+    flex-basis: 240px;
   }
 
-  .header__contrainer {
-    display: none;
-  }
-
-  .description__title-container {
-    margin: 42px 0 9px 0;
-  }
-
-  .description__title::before {
-    padding-right: 32px;
-  }
-
-  .description__service {
+  .brand__item:nth-child(7),
+  .brand__item:nth-child(8) {
     display: block;
   }
 
-  .description__service-text {
-    display: block;
+  .brand__list {
+    margin: 0 0 46px;
+    gap: 16px 32px;
+    max-width: 1120px;
   }
 
-  .description__list {
-    margin: 0 32px;
-    flex-wrap: wrap;
-    min-height: 82px;
-  }
-
-  .description__info {
-    justify-content: space-between;
-    margin: 0;
-    margin-left: 34px;
-    margin-right: 28px;
-    min-height: 307px;
-  }
-
-  .description__text {
-    max-width: 490px;
-    padding-top: 18px;
-  }
-
-  .description__img {
-    max-width: 531px;
-    padding-top: 5px;
+  .brand__link {
+    background-position: 16px, 183px;
   }
 }

@@ -4,80 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CPS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__contrainer">
-          <button class="header-button burger"></button>
-          <div class="header__line--logo--indent"></div>
-          <img
-            class="logo"
-            src="./images/Group.svg"
-            alt="логотип компании CPS"
-          />
-          <nav class="header__navigate">
-            <div class="header__navigate-visibility">
-              <a href="#" class="link call" target="_blank"></a>
-              <a href="#" class="link chat" target="_blank"></a>
-              <a href="#" class="link profile" target="_blank"></a>
-            </div>
-            <div class="header__line header__line--navigate--indent"></div>
-            <a href="#" class="link repair" target="_blank"></a>
-            <a href="#" class="link checkstatus" target="_blank"></a>
-          </nav>
-        </div>
-      </header>
       <main class="contant">
-        <section class="description">
-          <div class="description__title-container">
-            <h1 class="description__title">Услуги и сервисы</h1>
-            <div class="description__container-service">
-              <span class="description__service-text">Оставить заявку</span
-              ><a
-                href="#"
-                class="description__service repair"
-                target="_blank"
-              ></a>
-              <span class="description__service-text">Статус ремонта</span
-              ><a
-                href="#"
-                class="description__service checkstatus"
-                target="_blank"
-              ></a>
-            </div>
+        <section class="brand">
+          <div class="brand__container">
+            <h2 class="brand__title">Ремонт техники различных брендов</h2>
+            <ul class="brand__list">
+              <li class="brand__item">
+                <a class="brand__link lenovo" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link samsung" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link apple" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link vs" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link bosch" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link hp" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link acer" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link sony" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link lenovo" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link samsung" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item">
+                <a class="brand__link apple" href="#" target="_blank"></a>
+              </li>
+            </ul>
+            <a class="link-btn link-btn--indent show hidden" href="#"
+              >Показать все</a
+            >
           </div>
-          <ul class="description__list">
-            <li class="description__item">Ремонтируемые бренды</li>
-            <li class="description__item">Ремонтируемые устройства</li>
-            <li class="description__item">Цены на услуги</li>
-            <li class="description__item">Адреса сервисных центров</li>
-            <li class="description__item">Специальные цены</li>
-            <li class="description__item">Отзывы</li>
-          </ul>
-          <div class="description__info">
-            <div>
-              <p class="description__text">
-                Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя. <br />
-                <br />
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера, что подтверждает большое количество постоянных
-                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                и, в свою очередь, советуют нас родным и близким.
-              </p>
-              <a class="description__link" href="#">Читать далее</a>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <li class="brand__item swiper-slide">
+                <a class="brand__link lenovo" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link samsung" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link apple" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link vs" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link bosch" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link hp" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link acer" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link sony" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link lenovo" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link samsung" href="#" target="_blank"></a>
+              </li>
+              <li class="brand__item swiper-slide">
+                <a class="brand__link apple" href="#" target="_blank"></a>
+              </li>
             </div>
-            <img
-              class="description__img"
-              src="./images/CPS.jpg"
-              alt="фото логотипа и часы работы компании"
-            />
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </section>
       </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
