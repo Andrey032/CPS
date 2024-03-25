@@ -1,16 +1,18 @@
-var showBtn = document.querySelector('.link-btn');
-var brandContainer = document.querySelector('.brand__container');
-var brandItem = brandContainer.querySelectorAll('.brand__item');
+const showBtn = document.querySelector('.link-btn');
+const brandContainer = document.querySelector('.brand__container');
+const brandItem = brandContainer.querySelectorAll('.brand__item');
+
 
 function toggleBtn (item) {
   showBtn.addEventListener('click', function () {
-    item.classList.toggle('hidden');
-    if (item.classList[1] === 'hidden') {
-      showBtn.textContent = 'Показать всё';
-      showBtn.classList.remove('link-btn-revert');
-    } else {
+    if (item.classList.contains('hidden')) {
       showBtn.textContent = 'Скрыть';
       showBtn.classList.add('link-btn-revert');
+      item.classList.remove('hidden');
+    } else {
+      showBtn.textContent = 'Показать все'
+      showBtn.classList.remove('link-btn-revert')
+      item.classList.add('hidden');
     }
   });
 }
@@ -23,7 +25,7 @@ for (let i = 6; i < brandItem.length; i++) {
 var init = false;
 var swiper;
 function swiperCard() {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 767) {
     if (!init) {
       init = true;
       swiper = new Swiper(".swiper", {

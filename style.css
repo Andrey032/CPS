@@ -44,19 +44,15 @@ body {
     position: relative;
   }
 
-/* ---------------------------------------------------------- */
-
 .link-btn {
-  display: flex;
-  max-width: 150px;
-  margin-left: 16px;
-  text-decoration: none;
-  color: #1B1C21;
-  margin-bottom: 16px;
+  border: none;
+  padding: 0;
+  background: inherit;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   transition: opacity 0.3s;
+  cursor: pointer;
 }
 
 .link-btn::before {
@@ -66,11 +62,11 @@ body {
   height: 24px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .link-btn-revert::before {
-  background-image: url(./images/expand.svg);
+  transform: rotate(180deg);
 }
 
 .link-btn:hover {
@@ -86,7 +82,7 @@ body {
 }
 
 .brand__title {
-  margin: 16px 0 32px 0;
+  margin: 0 0 32px;
   padding: 0;
   font-size: 16px;
   font-weight: normal;
@@ -96,15 +92,12 @@ body {
   text-transform: uppercase;
 }
 
-.brand__list {
-  display: none;
-}
-
 .brand__item {
   flex-basis: 240px;
   height: 72px;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
 .brand__link {
@@ -158,7 +151,9 @@ body {
 
 .swiper-wrapper{
   margin-bottom: 40px;
+  padding: 0;
 }
+
 
 .swiper-pagination-bullet {
   width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
@@ -174,7 +169,7 @@ body {
 
   .brand__list {
     margin: 0 auto 24px;
-    gap: 16px 24px;
+    gap: 16px 26px;
     list-style: none;
     padding: 0;
     display: flex;
@@ -183,7 +178,7 @@ body {
   }
 
   .brand__item {
-    flex-basis: 224px;
+    flex-basis: 222px;
   }
 
   .brand__title {
@@ -196,10 +191,6 @@ body {
 
   .brand__link {
     background-position: 16px, 167px;
-  }
-
-  .swiper{
-    display: none;
   }
 }
 
@@ -222,7 +213,7 @@ body {
   .brand__list {
     margin: 0 0 46px;
     gap: 16px 32px;
-    max-width: 1120px;
+    min-width: 1120px;
   }
 
   .brand__link {
