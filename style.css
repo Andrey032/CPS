@@ -124,16 +124,16 @@ body {
   margin: 0 24px;
 }
 
-.close_indent {
+.close--indent {
   margin-top: 23px;
 }
 
-.find_indent {
+.find--indent {
   margin-top: 23px;
   margin-right: 0;
 }
 
-.logo_indent {
+.logo--indent {
   margin-top: 19px;
 }
 
